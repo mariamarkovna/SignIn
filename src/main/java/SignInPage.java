@@ -14,6 +14,10 @@ public class SignInPage {
 
     private static By submitBtn = By.xpath("//button[@type='submit']");
 
+//    public void confirmSignInPage(){
+//        Selenide.url().shouldHave(com.codeborne.selenide.Condition.contain("/public/signin"));
+//    }
+
     public void singIn(String email, String password){
         $(emailInput).val(email);
         $(passwordInput).val(password);
